@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10 Lecciones de Vida de Canelo Álvarez - Página de Venta</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; }
+    header { background: #1a1a1a; color: #fff; padding: 20px 0; text-align: center; }
+    .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+    .hero { text-align: center; padding: 40px 20px; }
+    .hero img { max-width: 200px; border-radius: 8px; }
+    .hero h1 { font-size: 2.5rem; margin: 20px 0 10px; }
+    .hero p { font-size: 1.2rem; margin-bottom: 20px; }
+    .btn { display: inline-block; background: #d4af37; color: #1a1a1a; padding: 15px 30px; text-decoration: none; font-weight: bold; border-radius: 4px; }
+    section { margin: 60px 0; }
+    #vsl-slot { text-align: center; }
+    #vsl-slot iframe { width: 100%; max-width: 640px; height: 360px; border: none; }
+    .features { display: flex; flex-wrap: wrap; gap: 20px; }
+    .feature { flex: 1 1 45%; background: #f9f9f9; padding: 20px; border-radius: 4px; }
+    .testimonials blockquote { background: #f1f1f1; padding: 20px; border-left: 5px solid #d4af37; border-radius: 4px; margin: 20px 0; }
+    footer { text-align: center; padding: 20px 0; background: #1a1a1a; color: #fff; }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>10 Lecciones de Vida de Canelo Álvarez</h2>
+  </header>
+
+  <div class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="cover-ebook.jpg" alt="Portada eBook" />
+      <h1>10 Lecciones de Vida que Cambiarán Tu Perspectiva</h1>
+      <p>Historias inspiradoras basadas en momentos ficticios y reales del gran campeón.</p>
+      <a href="#purchase" class="btn">¡Descárgalo Ahora!</a>
+    </section>
+
+    <!-- VSL Slot -->
+    <section id="vsl-slot">
+      <!-- Inserta aquí tu Video Sales Letter (VSL) -->
+      <!-- <iframe src="URL_DE_TU_VIDEO" allowfullscreen></iframe> -->
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+      <div class="feature">
+        <h3>Lección 1: Demuestra con Hechos</h3>
+        <p>Cómo responder al desprecio con logros reales.</p>
+      </div>
+      <div class="feature">
+        <h3>Lección 5: La Disciplina</h3>
+        <p>El entrenamiento diario que construye grandeza.</p>
+      </div>
+      <div class="feature">
+        <h3>Lección 8: Escucha tu Corazón</h3>
+        <p>Por qué debes ignorar el ruido de las opiniones.</p>
+      </div>
+      <div class="feature">
+        <h3>Lección 10: Inspira a Otros</h3>
+        <p>Cómo tu historia puede encender nuevos sueños.</p>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <h2>Lo Que Dicen Nuestros Lectores</h2>
+      <blockquote>
+        <p>“Las historias me emocionaron y me dieron fuerzas para seguir. ¡Altamente recomendable!”</p>
+        <footer>— María G.</footer>
+      </blockquote>
+      <blockquote>
+        <p>“Un eBook conciso pero lleno de poder, perfecto para cualquier amante del deporte y la superación.”</p>
+        <footer>— Juan P.</footer>
+      </blockquote>
+    </section>
+
+    <!-- Purchase Section -->
+    <section id="purchase" style="text-align: center;">
+      <h2>Precio Especial de Lanzamiento</h2>
+      <p><strong>US$4.99</strong> o <strong>R$19,90</strong></p>
+      <a href="LINK_DE_COMPRA" class="btn">Comprar Ahora</a>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Canal Canelo Álvarez Stories. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
