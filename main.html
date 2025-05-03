@@ -4,22 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>10 Lecciones de Vida de Canelo Álvarez - Página de Venta</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; }
-    header { background: #1a1a1a; color: #fff; padding: 20px 0; text-align: center; }
-    .container { max-width: 800px; margin: 0 auto; padding: 20px; }
-    .hero { text-align: center; padding: 40px 20px; }
-    .hero img { max-width: 200px; border-radius: 8px; }
-    .hero h1 { font-size: 2.5rem; margin: 20px 0 10px; }
-    .hero p { font-size: 1.2rem; margin-bottom: 20px; }
-    .btn { display: inline-block; background: #d4af37; color: #1a1a1a; padding: 15px 30px; text-decoration: none; font-weight: bold; border-radius: 4px; }
-    section { margin: 60px 0; }
-    #vsl-slot { text-align: center; }
-    #vsl-slot iframe { width: 100%; max-width: 640px; height: 360px; border: none; }
-    .features { display: flex; flex-wrap: wrap; gap: 20px; }
-    .feature { flex: 1 1 45%; background: #f9f9f9; padding: 20px; border-radius: 4px; }
-    .testimonials blockquote { background: #f1f1f1; padding: 20px; border-left: 5px solid #d4af37; border-radius: 4px; margin: 20px 0; }
-    footer { text-align: center; padding: 20px 0; background: #1a1a1a; color: #fff; }
+    :root {
+      --primary-color: #d4af37;
+      --dark-bg: #111;
+      --light-bg: #f5f5f5;
+      --text-color: #333;
+      --heading-font: 'Montserrat', sans-serif;
+      --body-font: 'Open Sans', sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--body-font); color: var(--text-color); background: var(--light-bg); }
+    header { background: var(--dark-bg); color: #fff; padding: 2rem 1rem; text-align: center; background: linear-gradient(135deg, #222, #111); }
+    header h2 { font-family: var(--heading-font); font-size: 2rem; letter-spacing: 1px; }
+    .container { max-width: 900px; margin: 0 auto; padding: 2rem 1rem; }
+    .hero { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 1.5rem; padding: 3rem 1rem; background: #fff; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+    .hero img { width: 180px; border-radius: 8px; }
+    .hero h1 { font-family: var(--heading-font); font-size: 2.5rem; color: var(--dark-bg); line-height: 1.2; }
+    .hero p { font-size: 1.125rem; max-width: 600px; color: #555; }
+    .btn { background: var(--primary-color); color: var(--dark-bg); padding: 0.75rem 2rem; text-decoration: none; font-weight: 600; border-radius: 30px; transition: background 0.3s; }
+    .btn:hover { background: #b8952e; }
+    section { margin: 3rem 0; }
+    #vsl-slot { display: flex; justify-content: center; }
+    #vsl-slot iframe { border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); width: 100%; max-width: 640px; height: 360px; }
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: 1.5rem; }
+    .feature { background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); transition: transform 0.3s; }
+    .feature:hover { transform: translateY(-5px); }
+    .feature h3 { font-family: var(--heading-font); font-size: 1.25rem; margin-bottom: 0.5rem; }
+    .feature p { font-size: 1rem; color: #555; }
+    .testimonials h2 { font-family: var(--heading-font); margin-bottom: 1rem; text-align: center; font-size: 1.75rem; }
+    .testimonials blockquote { background: #fff; padding: 1.5rem; border-left: 5px solid var(--primary-color); border-radius: 8px; margin: 1.5rem 0; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+    .testimonials footer { margin-top: 1rem; text-align: right; font-weight: 600; color: #555; }
+    #purchase { text-align: center; background: #fff; padding: 2rem 1rem; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+    #purchase h2 { font-family: var(--heading-font); font-size: 2rem; margin-bottom: 0.5rem; }
+    #purchase p { font-size: 1.5rem; margin-bottom: 1rem; color: #555; }
+    footer { text-align: center; padding: 1rem 0; background: var(--dark-bg); color: #aaa; font-size: 0.9rem; }
+    @media (max-width:600px) {
+      .hero h1 { font-size:2rem; }
+      .btn { width:100%; text-align:center; }
+    }
   </style>
 </head>
 <body>
@@ -28,21 +52,17 @@
   </header>
 
   <div class="container">
-    <!-- Hero Section -->
     <section class="hero">
-      <img src="cover-ebook.jpg" alt="Portada eBook" />
+      <img src="cover-ebook.jpg" alt="Portada eBook">
       <h1>10 Lecciones de Vida que Cambiarán Tu Perspectiva</h1>
       <p>Historias inspiradoras basadas en momentos ficticios y reales del gran campeón.</p>
       <a href="#purchase" class="btn">¡Descárgalo Ahora!</a>
     </section>
 
-    <!-- VSL Slot -->
     <section id="vsl-slot">
-      <!-- Inserta aquí tu Video Sales Letter (VSL) -->
       <iframe src="https://youtu.be/BupjiFQfuss" allowfullscreen></iframe>
     </section>
 
-    <!-- Features -->
     <section class="features">
       <div class="feature">
         <h3>Lección 1: Demuestra con Hechos</h3>
@@ -62,7 +82,6 @@
       </div>
     </section>
 
-    <!-- Testimonials -->
     <section class="testimonials">
       <h2>Lo Que Dicen Nuestros Lectores</h2>
       <blockquote>
@@ -75,8 +94,7 @@
       </blockquote>
     </section>
 
-    <!-- Purchase Section -->
-    <section id="purchase" style="text-align: center;">
+    <section id="purchase">
       <h2>Precio Especial de Lanzamiento</h2>
       <p><strong>US$7.99</strong></p>
       <a href="LINK_DE_COMPRA" class="btn">Comprar Ahora</a>
